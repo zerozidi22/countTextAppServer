@@ -1,0 +1,22 @@
+server:
+  address: 0.0.0.0
+  port: 9080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://35.202.26.74:3306/count_text?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    password: silly!@34
+    username: silly
+  hikari:
+    auto-commit: false
+    connection-test-query: SELECT 1
+    minimum-idle: 10
+    maximum-pool-size: 50
+    transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+    pool-name: pool-kai
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
