@@ -1,10 +1,11 @@
 server:
   address: 0.0.0.0
   port: 9080
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://35.202.26.74:3306/count_text?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://35.202.26.74:3306/count_text?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
     password: silly!@34
     username: silly
   hikari:
