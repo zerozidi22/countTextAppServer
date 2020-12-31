@@ -38,6 +38,7 @@ public class MemoController {
 
     @PutMapping("/update")
     public ResponseEntity<Memo> updateMemoData(@RequestBody Memo memo){
+
         Memo rst = memoService.updateMemoData(memo);
         return new ResponseEntity<>(rst, HttpStatus.OK);
     }
