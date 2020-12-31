@@ -55,7 +55,6 @@ export default {
       this.memo = "";
     },
     countMemo(event){
-      console.log(event)
       this.len = 0 ;
       if(event){
         this.len = event.trim().replace(/\n/g, "").length;
@@ -120,8 +119,6 @@ export default {
       });
     },    
     getDataDetail(){
-      console.log(this.$store.state.socialId);
-      console.log(this.$route.query.id);
         this.$axios.get(`/api/memo/${this.$store.state.socialId}/${this.$route.query.id}`).then(response => {
           this.memo = response.data.text;
       });
