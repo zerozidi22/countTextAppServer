@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mt-tabbar fixed>
+    <mt-tabbar>
         <mt-tab-item id="tab1" >
             <img slot="icon" src="../assets/pen.png" @click="routeToHome">
             카운트

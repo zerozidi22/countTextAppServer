@@ -6,7 +6,7 @@
       <div align="right" >현재 작성한 글자 수 (공백 포함) : {{len}} 자  </div>
       <div v-if="this.$store.state.socialId == ''" style="font-size: 5px" align="right" >* 로그인 시 내용 저장이 가능합니다.</div>
 
-    <mt-field style="margin-top:10px; border:1px dotted;" placeholder="입력해주세요" type="textarea" rows="15" v-model="memo" @input="countMemo" maxlength="3000"></mt-field>
+    <mt-field style="margin-top:10px; border:1px dotted;" placeholder="입력해주세요" type="textarea" rows="10" v-model="memo" @input="countMemo" maxlength="3000"></mt-field>
 
     <div align="center" style="margin-top:15px;">
     <mt-button size="large" @click="clear" type="default" style="margin-left: 10px; margin-bottom:10px;">초기화</mt-button>
